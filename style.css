@@ -894,3 +894,13 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
 
 /* Links under an experience entry */
 .timeline-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:4px;}
+
+/* Brand logos in the tech stack marquee (Simple Icons, CC0) */
+.tech-pill{display:inline-flex;align-items:center;gap:10px;}
+.tech-logo{width:18px;height:18px;flex:none;display:block;}
+.tech-pill:hover .tech-logo{transform:scale(1.12);}
+.tech-logo{transition:transform .2s ease;}
+@media (max-width:720px){.tech-pill{gap:8px;}.tech-logo{width:16px;height:16px;}}
+
+.number-link{color:var(--accent);border-bottom:1px solid rgba(94,234,212,.35);}
+.number-link:hover{color:var(--heading);border-color:var(--accent);}
